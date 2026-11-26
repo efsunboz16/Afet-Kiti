@@ -2098,4 +2098,24 @@
     <string name="counter_suggestion_blanket">Blanket</string>
     <string name="counter_suggestion_mask">Mask</string>
     <string name="counter_suggestion_wet_wipes">Wet wipes</string>
+    <string name="tool_recent_earthquakes_title">Recent Earthquakes</string>
+    <string name="tool_recent_earthquakes_summary">Latest earthquakes in and around Türkiye from AFAD</string>
+    <string name="earthquakes_source_afad">Source: AFAD (deprem.afad.gov.tr)</string>
+    <string name="earthquakes_updated">Updated %s</string>
+    <string name="earthquakes_time_range">Time range</string>
+    <string name="earthquakes_last_day">Last 24 hours</string>
+    <string name="earthquakes_last_week">Last 7 days</string>
+    <string name="earthquakes_last_month">Last 30 days</string>
+    <string name="earthquakes_min_magnitude">Minimum magnitude</string>
+    <string name="earthquakes_magnitude_at_least">M %s+</string>
+    <string name="earthquakes_sort_time">Date</string>
+    <string name="earthquakes_sort_magnitude">Magnitude</string>
+    <string name="earthquakes_sort_depth">Depth</string>
+    <string name="earthquakes_sort_location">Location</string>
+    <string name="earthquakes_depth">Depth: %s km</string>
+    <string name="earthquakes_empty">No earthquakes found for these filters.</string>
+    <string name="earthquakes_error_connection">Could not reach AFAD. Check your internet connection and try again.</string>
+    <string name="earthquakes_error_server">AFAD data could not be loaded. Please try again later.</string>
+    <string name="earthquakes_retry">Try again</string>
+    <string name="earthquakes_no_map_app">No map app found to show this location.</string>
 </resources>

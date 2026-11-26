@@ -1542,4 +1542,24 @@
     <string name="counter_suggestion_blanket">Battaniye</string>
     <string name="counter_suggestion_mask">Maske</string>
     <string name="counter_suggestion_wet_wipes">Islak mendil</string>
+    <string name="tool_recent_earthquakes_title">Son Depremler</string>
+    <string name="tool_recent_earthquakes_summary">AFAD verileriyle Türkiye ve çevresindeki son depremler</string>
+    <string name="earthquakes_source_afad">Kaynak: AFAD (deprem.afad.gov.tr)</string>
+    <string name="earthquakes_updated">Güncellendi: %s</string>
+    <string name="earthquakes_time_range">Zaman aralığı</string>
+    <string name="earthquakes_last_day">Son 24 saat</string>
+    <string name="earthquakes_last_week">Son 7 gün</string>
+    <string name="earthquakes_last_month">Son 30 gün</string>
+    <string name="earthquakes_min_magnitude">En düşük büyüklük</string>
+    <string name="earthquakes_magnitude_at_least">M %s+</string>
+    <string name="earthquakes_sort_time">Tarih</string>
+    <string name="earthquakes_sort_magnitude">Büyüklük</string>
+    <string name="earthquakes_sort_depth">Derinlik</string>
+    <string name="earthquakes_sort_location">Yer</string>
+    <string name="earthquakes_depth">Derinlik: %s km</string>
+    <string name="earthquakes_empty">Bu filtrelere uyan deprem bulunamadı.</string>
+    <string name="earthquakes_error_connection">AFAD\'a ulaşılamadı. İnternet bağlantını kontrol edip tekrar dene.</string>
+    <string name="earthquakes_error_server">AFAD verileri yüklenemedi. Lütfen daha sonra tekrar dene.</string>
+    <string name="earthquakes_retry">Tekrar dene</string>
+    <string name="earthquakes_no_map_app">Bu konumu gösterecek harita uygulaması bulunamadı.</string>
 </resources>

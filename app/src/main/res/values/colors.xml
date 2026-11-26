@@ -20,6 +20,12 @@
     <color name="black">#000000</color>
     <color name="gray">#9E9E9E</color>
 
+    <!--Earthquake magnitude levels-->
+    <color name="earthquake_minor">#9E9E9E</color>
+    <color name="earthquake_light">#FDD835</color>
+    <color name="earthquake_moderate">#FB8C00</color>
+    <color name="earthquake_strong">#D32F2F</color>
+
     <!--Buttons / charts-->
     <color name="md_theme_primary">#c05000</color>
     <color name="md_theme_onPrimary">#FFFFFF</color>

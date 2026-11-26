@@ -418,6 +418,10 @@
         android:name="com.kylecorry.trail_sense.tools.counter.ui.ToolCounterFragment"
         android:label="ToolCounterFragment" />
     <fragment
+        android:id="@+id/recentEarthquakesFragment"
+        android:name="com.kylecorry.trail_sense.tools.earthquakes.ui.RecentEarthquakesFragment"
+        android:label="RecentEarthquakesFragment" />
+    <fragment
         android:id="@+id/fragmentToolSolarPanel"
         android:name="com.kylecorry.trail_sense.tools.solarpanel.ui.FragmentToolSolarPanel"
         android:label="FragmentToolSolarPanel" />
