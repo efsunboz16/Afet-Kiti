@@ -31,6 +31,7 @@ import com.kylecorry.trail_sense.tools.convert.ConvertToolRegistration
 import com.kylecorry.trail_sense.tools.counter.CounterToolRegistration
 import com.kylecorry.trail_sense.tools.declination.DeclinationToolRegistration
 import com.kylecorry.trail_sense.tools.diagnostics.DiagnosticsToolRegistration
+import com.kylecorry.trail_sense.tools.earthquakes.RecentEarthquakesToolRegistration
 import com.kylecorry.trail_sense.tools.emergency_call.EmergencyCallToolRegistration
 import com.kylecorry.trail_sense.tools.experimentation.ExperimentationToolRegistration
 import com.kylecorry.trail_sense.tools.field_guide.FieldGuideToolRegistration
@@ -119,7 +120,8 @@ object Tools {
         MapToolRegistration,
         MagnifierToolRegistration,
         EmergencyCallToolRegistration,
-        CounterToolRegistration
+        CounterToolRegistration,
+        RecentEarthquakesToolRegistration
     )
     private val bus = EventBus<Bundle>()
 
@@ -299,6 +301,7 @@ object Tools {
     const val EMERGENCY_CALL = 49L
 
     const val COUNTER = 50L
+    const val RECENT_EARTHQUAKES = 51L
 
     // Quick Action IDs
     const val QUICK_ACTION_NONE = -1

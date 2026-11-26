@@ -97,6 +97,8 @@
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE_HEALTH" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK" />
+    <!--Used by the Recent Earthquakes tool to download data from AFAD-->
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <!--Force remove this permission from androidx-->
     <uses-permission

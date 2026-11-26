@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.kylecorry.trail_sense.shared.views.Toolbar
+        android:id="@+id/earthquakes_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:rightButtonIcon="@drawable/ic_baseline_refresh_24"
+        app:showSubtitle="true"
+        app:title="@string/tool_recent_earthquakes_title" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/earthquakes_filters"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/earthquakes_time_range"
+            style="@style/Widget.Material3.Chip.Assist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Last 24 hours" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/earthquakes_min_magnitude"
+            style="@style/Widget.Material3.Chip.Assist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="M 2.0+" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/earthquakes_sort"
+            style="@style/Widget.Material3.Chip.Assist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:chipIcon="@drawable/sort_ascending"
+            app:chipIconSize="@dimen/chip_icon_size"
+            app:chipIconTint="?android:textColorSecondary"
+            app:iconStartPadding="4dp"
+            tools:text="Date" />
+    </com.google.android.material.chip.ChipGroup>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/earthquakes_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:paddingHorizontal="16dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/item_earthquake" />
+
+        <ProgressBar
+            android:id="@+id/earthquakes_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/earthquakes_message_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="32dp"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_tool_earthquake"
+                app:tint="?attr/colorPrimary" />
+
+            <TextView
+                android:id="@+id/earthquakes_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+                android:textColor="?attr/colorOnSurface"
+                tools:text="@string/earthquakes_error_connection" />
+
+            <Button
+                android:id="@+id/earthquakes_retry_btn"
+                style="@style/Widget.Material3.Button.TonalButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/earthquakes_retry" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/earthquakes_attribution"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/default_bottom_margin"
+        android:gravity="center"
+        android:paddingVertical="4dp"
+        android:text="@string/earthquakes_source_afad"
+        android:textAppearance="@style/TextAppearance.Material3.BodySmall"
+        android:textColor="?android:attr/textColorSecondary" />
+</LinearLayout>
